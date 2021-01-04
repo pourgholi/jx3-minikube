@@ -14,8 +14,11 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.96.73.153
   environments:
   - key: dev
+    owner: pourgholi
+    repository: jx3-minikube
   - key: staging
   - key: production
   ingress:
@@ -26,6 +29,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: hamid.pourgholi@gmail.com
   repository: bucketrepo
   secretStorage: vault
   vault: {}
